@@ -25,10 +25,14 @@ $field-text-focus-color: #555;
 
 // Breakpoints variables
 $tablet-width: 768px;
-$desktop-width: 1024px;
-$max-width-container: 1160px;
+$desktop-width: 992px;
+$max-width-container: 1370px;
 
 $font-weight-semibold: 600;
 
 // Transitions
 $input-transition: border .12s ease-in-out;
+
+
+// Assets
+$assets-rondo-woff: '$assets-rondo-woff';
