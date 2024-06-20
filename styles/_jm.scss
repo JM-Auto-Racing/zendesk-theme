@@ -3476,7 +3476,10 @@ body.hideScrollBar,html.hideScrollBar {
     width: 100%
 }
 
-body.hamLeft .PageWrapper,body.hamRight .PageWrapper {
+body header,
+body main,
+body footer,
+body.hamRight .PageWrapper {
     transition: transform 0.3s ease;
     -webkit-transition: transform 0.3s ease;
     -moz-transition: transform 0.3s ease;
@@ -4647,7 +4650,7 @@ img {
     height: 16px;
     width: 16px;
     display: inline-block;
-    fill: currentColor;
+    fill: red;
     pointer-events: none
 }
 
@@ -4655,7 +4658,7 @@ img {
     height: 16px;
     width: 16px;
     display: inline-block;
-    fill: currentColor;
+    fill: red;
     pointer-events: none
 }
 
@@ -5488,7 +5491,7 @@ span.filtersHead {
     font-size: 13px
 }
 
-body.hamLeft .HamburgerMenu {
+body .HamburgerMenu {
     transform: translate(-400px,0);
     -webkit-transform: translate(-400px,0);
     -moz-transform: translate(-400px,0);
@@ -9020,7 +9023,7 @@ button.swiper-pagination-bullet {
         margin: 1px 0 0 3px
     }
 
-    body.hamLeft .MobileMenuToggle {
+    body .MobileMenuToggle {
         left: 0
     }
 
@@ -9067,7 +9070,7 @@ button.swiper-pagination-bullet {
         margin: 13px 2px
     }
 
-    body.browsing.hamLeft .MobileMenuToggle {
+    body.browsing .MobileMenuToggle {
         left: 45px
     }
 
@@ -23015,7 +23018,7 @@ a.DiameterNumberStag {
 }
 
 .headerWrapper {
-    background: url('/files/body-background.jpg');
+    background: url('$assets-body-background-jpg');
     background-position: center
 }
 
@@ -29316,7 +29319,8 @@ header .incl1 .colCount ul.mit span.listWithImages,header .incl2 .colCount ul.mi
 }
 
 .megaMPlch .listWithImages a.SubMenuListItemLink {
-    display: table
+    /* display: table */
+    display: flex;
 }
 
 .megaMPlch .listWithImages a.SubMenuListItemLink img,.megaMPlch .listWithImages a.SubMenuListItemLink .SubMenuItemNameWrapper {
@@ -29595,7 +29599,7 @@ body.hamOpened .HamburgerMenu {
     z-index: 1
 }
 
-body.hamOpened.hamLeft .HamburgerMenu {
+body.hamOpened .HamburgerMenu {
     transform: translate(0,0);
     -webkit-transform: translate(0,0);
     -moz-transform: translate(0,0);
@@ -29610,7 +29614,10 @@ body.hamOpened.hamRight .HamburgerMenu {
     right: 0
 }
 
-body.hamOpened.hamLeft .PageWrapper,body.hamOpened.hamLeft .DiscountNotificationWrap {
+body.hamOpened header,
+body.hamOpened main,
+body.hamOpened footer,
+body.hamOpened .DiscountNotificationWrap {
     transform: translate(400px,0);
     -webkit-transform: translate(400px,0);
     -moz-transform: translate(400px,0);
@@ -31779,7 +31786,7 @@ body.overlayBoxBlurBG #Form {
         overscroll-behavior-y: contain
     }
 
-    body.hamOpened.hamLeft .PageWrapper {
+    body.hamOpened header, body.hamOpened main, body.hamOpened footer {
         transform: translate(80vw,0)
     }
 
@@ -31799,7 +31806,7 @@ body.overlayBoxBlurBG #Form {
         transform: translate(-84vw,0)
     }
 
-    body.hamLeft .HamburgerMenu {
+    body .HamburgerMenu {
         transform: translate(-84vw,0)
     }
 
