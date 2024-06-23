@@ -1,5 +1,28 @@
 /***** Homepage *****/
 
+.promoted-articles {
+  overflow: hidden;
+}
+
+.promoted-articles li {
+  transform: translateX(-3rem);
+}
+
+.promoted-articles li::before {
+  display: inline-block;
+  counter-increment: promoted;
+  content: counter(promoted) '. ';
+  width: 2rem;
+  margin-right: 1rem;
+  transition: all;
+  transition-duration: 100ms;
+  transform: translateX(-3rem);
+}
+
+.promoted-articles li:hover::before, .promoted-articles li:hover {
+  transform: translateX(0);
+}
+
 .section {
   @include tablet {
     margin-bottom: 60px;

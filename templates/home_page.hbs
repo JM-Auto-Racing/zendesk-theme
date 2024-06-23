@@ -7,77 +7,66 @@
       <circle cx="4.5" cy="4.5" r="4" fill="none" stroke="currentColor"/>
       <path stroke="currentColor" stroke-linecap="round" d="M11 11L7.5 7.5"/>
     </svg>
-    {{search submit=false instant=settings.instant_search class='search search-full'}}
+    {{search submit=false instant=true class='search search-full'}}
   </div>
 </section>
 
 <div class="container">
-  <section class="section knowledge-base">
-    <h2 class="visibility-hidden">{{ t 'categories' }}</h2>
-    <section class="categories blocks">
-      <ul class="blocks-list">
-        {{#each categories}}
-          {{#if ../has_multiple_categories}}
+  <section class="categories blocks mb-24">
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+      {{#each categories}}
+        {{#if ../has_multiple_categories}}
+          <a href="{{url}}" class="flex flex-col bg-white border border-t-4 shadow-sm rounded-xl hover:shadow-lg transition hover:no-underline" style="border-top-color: #0C7908;">
+            <img class="w-full h-40 object-cover" src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80" alt="Image Description">
+            <div class="flex flex-col gap-4 p-8 md:p-8">
+              <h3 class="text-lg font-bold text-gray-800">
+                {{name}}
+              </h3>
+              <p class="text-gray-500">
+                {{excerpt description}}
+              </p>
+            </div>
+          </a>
+        {{else}}
+          {{#each sections}}
             <li class="blocks-item">
               <a href='{{url}}' class="blocks-item-link">
-                <span class="blocks-item-title">{{name}}</span>
+                <span class="blocks-item-title">
+                  {{name}}
+                </span>
                 <span class="blocks-item-description">{{excerpt description}}</span>
               </a>
             </li>
-          {{else}}
-            {{#each sections}}
-              <li class="blocks-item">
-                <a href='{{url}}' class="blocks-item-link">
-                  <span class="blocks-item-title">
-                    {{name}}
-                  </span>
-                  <span class="blocks-item-description">{{excerpt description}}</span>
-                </a>
-              </li>
-            {{/each}}
-          {{/if}}
-        {{/each}}
-      </ul>
-      {{pagination}}
-    </section>
-
-    {{#if promoted_articles}}
-      <section class="articles">
-        <h2>{{t 'promoted_articles'}}</h2>
-        <ul class="article-list promoted-articles">
-          {{#each promoted_articles}}
-            <li class="promoted-articles-item">
-                <a href="{{url}}">
-                  {{title}}
-
-                  {{#if internal}}
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" viewBox="0 0 16 16" class="icon-lock" title="{{t 'internal'}}">
-                      <rect width="12" height="9" x="2" y="7" fill="currentColor" rx="1" ry="1"/>
-                      <path fill="none" stroke="currentColor" d="M4.5 7.5V4a3.5 3.5 0 017 0v3.5"/>
-                    </svg>
-                  {{/if}}
-                </a>
-            </li>
           {{/each}}
-        </ul>
-      </section>
-    {{/if}}
+        {{/if}}
+      {{/each}}
+    </ul>
+    {{pagination}}
   </section>
 
-  {{#if help_center.community_enabled}}
-    <section class="section home-section community">
-      <h2>{{t 'community'}}</h2>
-      {{#link 'community' class='community-link'}}
-        {{t 'join_conversation'}}
-      {{/link}}
+  {{#if promoted_articles}}
+    <section class="articles flex items-center flex-col">
+      <div class="text-center">
+        <h2>{{t 'promoted_articles'}}</h2>
+      </div>
+      <div class="w-full sm:w-1/2 md:w-1/3">
+        <ol class="article-list promoted-articles">
+          {{#each promoted_articles}}
+            <a href="{{url}}" class="w-full">
+              <li class="p-6 border-b-2 w-full text-3xl transition-all">
+                    {{title}}
 
-      <div class="community-image"></div>
+                    {{#if internal}}
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" viewBox="0 0 16 16" class="icon-lock" title="{{t 'internal'}}">
+                        <rect width="12" height="9" x="2" y="7" fill="currentColor" rx="1" ry="1"/>
+                        <path fill="none" stroke="currentColor" d="M4.5 7.5V4a3.5 3.5 0 017 0v3.5"/>
+                      </svg>
+                    {{/if}}
+              </li>
+            </a>
+          {{/each}}
+        </ol>
+      </div>
     </section>
   {{/if}}
-
-  <section class="section home-section activity">
-    {{#if settings.show_recent_activity}}
-      {{recent_activity}}
-    {{/if}}
-  </section>
 </div>

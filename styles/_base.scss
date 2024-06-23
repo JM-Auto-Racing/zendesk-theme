@@ -6,8 +6,8 @@
 body {
   background-color: $background_color;
   color: $text_color;
-  font-family: $text_font;
-  font-size: $font-size-base;
+  font-family: $text_font !important;
+  font-size: $font-size-base !important;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 
@@ -16,6 +16,8 @@ body {
       min-height: 65vh;
     }
   }
+
+  counter-reset: promoted;
 }
 
 h1,
@@ -29,20 +31,20 @@ h6 {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 32px !important;
 }
 
 h2 {
-  font-size: 22px;
+  font-size: 22px !important;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 18px !important;
   font-weight: $font-weight-semibold;
 }
 
 h4 {
-  font-size: 16px;
+  font-size: 16px !important;
 }
 
 a {
