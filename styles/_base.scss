@@ -138,6 +138,11 @@ ul {
 
 .error-page {
   @include max-width-container;
+  padding-bottom: 20px;
+
+  @include desktop {
+    min-height: calc(65vh - 21px);
+  }
 }
 
 .visibility-hidden {
