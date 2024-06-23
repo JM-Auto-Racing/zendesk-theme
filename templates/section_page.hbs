@@ -1,4 +1,4 @@
-<section class="p-8 flex justify-center">
+<section class="p-8 flex justify-center page-top-search">
   <div class="w-1/2 relative">
     <h2 class="visibility-hidden">{{ t 'search' }}</h2>
     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="search-icon" aria-hidden="true">
@@ -16,7 +16,7 @@
 
   <div class="section-container">
     <section id="main-content" class="section-content">
-      <header class="page-header border-0">
+      <header class="page-header flex-col gap-0 border-0">
         <h1>{{section.name}}</h1>
         {{#if settings.show_follow_section}}
           <div class="section-subscribe">{{subscribe}}</div>
