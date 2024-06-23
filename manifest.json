@@ -365,7 +365,7 @@
           "type": "checkbox",
           "description": "follow_section_description",
           "label": "follow_section_label",
-          "value": true
+          "value": false
         }
       ]
     },
