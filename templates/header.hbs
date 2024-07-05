@@ -97,7 +97,60 @@
 </header>
 -->
 
-<div class="HamburgerMenu"></div>
+<div data-loaded="false" class="HamburgerMenu">
+  <span class="h2 hamTitle">Account</span>
+  <ul class="ULNav">
+    {{#if signed_in}}
+      <li class="ULNavLi">
+        <ul class="MainMenuULWrapper No-Mega">
+          <li class="headermainnav">
+            <a href="{{page_path 'requests'}}" class="wSvgLeft">
+              <span class="NavLinkText">My Requests</span>
+              <span class="MegaArrow">
+                <svg class="sceico-downsolo">
+                  <use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="/scripts/svgIcons/icons.svg#sceico-downsolo">
+                  </use>
+                </svg>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="ULNavLi">
+        <ul class="MainMenuULWrapper No-Mega">
+          <li class="headermainnav">
+            <a href="{{page_path 'sign_out'}}" class="wSvgLeft">
+              <span class="NavLinkText">Sign Out</span>
+              <span class="MegaArrow">
+                <svg class="sceico-downsolo">
+                  <use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="/scripts/svgIcons/icons.svg#sceico-downsolo">
+                  </use>
+                </svg>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </li>
+    {{/if}}
+    {{#unless signed_in}}
+      <li class="ULNavLi">
+        <ul class="MainMenuULWrapper No-Mega">
+          <li class="headermainnav">
+            <a href="{{page_path 'sign_in'}}" class="wSvgLeft">
+              <span class="NavLinkText">Sign In</span>
+              <span class="MegaArrow">
+                <svg class="sceico-downsolo">
+                  <use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="/scripts/svgIcons/icons.svg#sceico-downsolo">
+                  </use>
+                </svg>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </li>
+    {{/unless}}
+  </ul>
+</div>
 <div class="megaMPlch">
   <ul class="MainMenuHoverULWrapper mID-39">
     <li class="SubLi clearfix">
@@ -926,6 +979,44 @@
                                       <span class="PhoneCallNumber">(855) 998-8726</span>
                                       <a href="https://jmautosports.com/contact">Contact Us</a>
                                     </div>
+                                    {{#unless signed_in}}
+                                      <div class="wishInHead">
+                                        <a href="{{page_path 'sign_in'}}" class="cartHeadLink">
+                                          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-login-2" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <path d="M9 8v-2a2 2 0 0 1 2 -2h7a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-7a2 2 0 0 1 -2 -2v-2" />
+                                            <path d="M3 12h13l-3 -3" />
+                                            <path d="M13 15l3 -3" />
+                                          </svg>
+                                          <span>Sign In</span>
+                                        </a>
+                                      </div>
+                                    {{/unless}}
+                                    {{#if signed_in}}
+                                      <div class="wishInHead">
+                                        <a href="{{page_path 'requests'}}" class="cartHeadLink">
+                                          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-question" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <path d="M15 19h-10a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v4.5" />
+                                            <path d="M19 22v.01" />
+                                            <path d="M19 19a2.003 2.003 0 0 0 .914 -3.782a1.98 1.98 0 0 0 -2.414 .483" />
+                                            <path d="M3 7l9 6l9 -6" />
+                                          </svg>
+                                          <span>My Requests</span>
+                                        </a>
+                                      </div>
+                                      <div class="wishInHead">
+                                        <a href="{{page_path 'sign_out'}}" class="cartHeadLink">
+                                          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-logout-2" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <path d="M10 8v-2a2 2 0 0 1 2 -2h7a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-7a2 2 0 0 1 -2 -2v-2" />
+                                            <path d="M15 12h-12l3 -3" />
+                                            <path d="M6 15l-3 -3" />
+                                          </svg>
+                                          <span>Sign Out</span>
+                                        </a>
+                                      </div>
+                                    {{/if}}
                                   </div>
                                 </div>
                               </div>

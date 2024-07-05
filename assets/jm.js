@@ -8972,11 +8972,12 @@ function setupHamburger() {
 	else if (t.length > 0) nav = t;
 	else if ($("nav").length > 0) nav = $("nav");
 	else return !1;
-	hamMen.html().trim() == "" && (nav.clone().appendTo(hamMen), $("main[role=main]").find(".opnHamOverlay").length <= 0 && $("main[role=main]").prepend("<div class='opnHamOverlay'><\/div>"), hamNav = hamMen.find("nav"), hamNav.prepend("<span class='h2 hamTitle shop'>Shop<\/span>"), $(".hamExtras").detach().appendTo(hamNav).show(), $(".megaMPlch").find(".MainMenuHoverULWrapper").each(function() {
+	hamMen.attr('data-loaded') === 'false' && (nav.clone().appendTo(hamMen), $("main[role=main]").find(".opnHamOverlay").length <= 0 && $("main[role=main]").prepend("<div class='opnHamOverlay'><\/div>"), hamNav = hamMen.find("nav"), hamNav.prepend("<span class='h2 hamTitle shop'>Shop<\/span>"), $(".hamExtras").detach().appendTo(hamNav).show(), $(".megaMPlch").find(".MainMenuHoverULWrapper").each(function() {
 		var t = $(this).attr("class").split("mID-")[1].split(" ")[0],
 			n = hamMen.find(".mID-" + t).closest(".MainMenuULWrapper");
 		n.append("<li class='Hams'><\/li>");
 		$(this).clone().appendTo(n.find(".Hams"))
+		hamMen.attr('data-loaded', 'true');
 	}))
 }
 
