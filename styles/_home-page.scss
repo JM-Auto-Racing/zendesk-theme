@@ -104,8 +104,13 @@
 }
 
 .home-category {
-  background: #A0A0A0;
+  /* background: #A0A0A0;
   background-size: 100% 400px;
+  background-image: radial-gradient(18% 28% at 24% 50%, #CEFAFFFF 7%, #073AFF00 100%),radial-gradient(18% 28% at 18% 71%, #FFFFFF59 6%, #073AFF00 100%),radial-gradient(70% 53% at 36% 76%, #73F2FFFF 0%, #073AFF00 100%),radial-gradient(42% 53% at 15% 94%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(42% 53% at 34% 72%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(18% 28% at 35% 87%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(31% 43% at 7% 98%, #FFFFFFFF 24%, #073AFF00 100%),radial-gradient(21% 37% at 72% 23%, #199D14FF 24%, #073AFF00 100%),radial-gradient(35% 56% at 91% 74%, #b1b1b1f5 9%, #073AFF00 100%),radial-gradient(74% 86% at 67% 38%, #0C7908 24%, #073AFF00 100%),linear-gradient(125deg, #F8F8F8FF 1%, #959595FF 100%); */
   background-position: center center;
-  background-image: radial-gradient(18% 28% at 24% 50%, #CEFAFFFF 7%, #073AFF00 100%),radial-gradient(18% 28% at 18% 71%, #FFFFFF59 6%, #073AFF00 100%),radial-gradient(70% 53% at 36% 76%, #73F2FFFF 0%, #073AFF00 100%),radial-gradient(42% 53% at 15% 94%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(42% 53% at 34% 72%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(18% 28% at 35% 87%, #FFFFFFFF 7%, #073AFF00 100%),radial-gradient(31% 43% at 7% 98%, #FFFFFFFF 24%, #073AFF00 100%),radial-gradient(21% 37% at 72% 23%, #199D14FF 24%, #073AFF00 100%),radial-gradient(35% 56% at 91% 74%, #b1b1b1f5 9%, #073AFF00 100%),radial-gradient(74% 86% at 67% 38%, #0C7908 24%, #073AFF00 100%),linear-gradient(125deg, #F8F8F8FF 1%, #959595FF 100%);
+  background-image: url($assets-body-background-jpg);
+}
+
+.home-category > .inner {
+  background-color: rgba(255, 255, 255, 0.3);
 }
