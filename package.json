@@ -1,6 +1,6 @@
 {
   "name": "jmautoracing",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": "git@github.com:JM-Auto-Racing/zendesk-theme.git",
   "scripts": {
     "start": "concurrently -k -r 'rollup -c -w' 'wait-on script.js style.css && zcli themes:preview'",
