@@ -1,6 +1,9 @@
+.dropdown:not(.menu-lv-2) {
+  display: inline-block;
+}
+
 .dropdown {
   position: relative;
-  display: inline-block;
 }
 
 .dropdown-toggle {

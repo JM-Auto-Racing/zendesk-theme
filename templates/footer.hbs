@@ -1,295 +1,194 @@
-<!-- <footer class="footer">
-  <div class="footer-inner">
-    {{#link 'help_center'}}{{help_center.name}}{{/link}}
-
-    <div class="footer-language-selector">
-      {{#if alternative_locales}}
-        <div class="dropdown language-selector">
-          <button class="dropdown-toggle" aria-haspopup="true">
-            {{current_locale.name}}
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="dropdown-chevron-icon">
-              <path fill="none" stroke="currentColor" stroke-linecap="round" d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5"/>
-            </svg>
-          </button>
-          <span class="dropdown-menu dropdown-menu-end" role="menu">
-            {{#each alternative_locales}}
-              <a href="{{url}}" dir="{{direction}}" rel="nofollow" role="menuitem">
-                {{name}}
-              </a>
-            {{/each}}
-          </span>
-        </div>
-      {{/if}}
-    </div>
-  </div>
-</footer> -->
-
-<footer class="ftrMain">
-  <div class="mt-24 py-12 sm:py-32" style="background: #0C7908;">
-    <div class="text-center pb-12 text-4xl text-slate-200">Need additional help?</div>
-    <div class="w-full flex justify-center">
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 w-full sm:w-fit">
-        <div class="flex justify-center">
-          <a href="javascript:zE('messenger', 'open');" class="p-6 w-5/6 sm:w-72 text-center talk-link">Chat with Us</a>
-        </div>
-        <div class="flex justify-center">
-          <a href="https://www.jmautosports.com/contact" class="p-6 w-5/6 sm:w-72 text-center talk-link">Talk to Us</a>
-        </div>
-        <div class="flex justify-center">
-          <a href="{{page_path 'new_request'}}" class="p-6 w-5/6 sm:w-72 text-center talk-link">Email Us</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="FooterPane" class="mainFooterPane" runat="server">
-    <div class="FooterWideInnerWrapper">
-      <div id="dnn_ctr306650_ViewLayoutManager_SCEFooter_3_panalHTML">
-        <div id="FootCustomHTMLAbove" class="FootCustomHTML Above">
-          <div class="CustomHTMLBox">
-            <div class="container ftrContainer">
-              <div class="row layoutToggleMobile">
-                <div class="col-md-5 column first">
-                  <div class="row">
-                    <div class="col-xs-6 column first">
-                      <img src="https://jmautosports.com/Files/logo.png" class="b-lazy b-loaded" data-download="false" alt="">
-                    </div>
-                    <div class="col-xs-6 column last">
-                      <div class="socialMediaIcons AlignRight">
-                        <a href="https://www.facebook.com/jmautoracing1" class="socialicon-facebook" style="font-size: 33px; line-height: 33px; margin-left: 0px; margin-right: 5px" target="_blank"></a>
-                        <a href="https://twitter.com/JMAutoRacing" class="socialicon-twitter" style="font-size: 33px; line-height: 33px; margin-left: 5px; margin-right: 5px" target="_blank"></a>
-                        <a href="https://instagram.com/jmautoracing" class="socialicon-instagram" style="font-size: 33px; line-height: 33px; margin-left: 5px; margin-right: 5px" target="_blank"></a>
-                        <a href="https://jmautosports.com/contact" class="socialicon-email" style="font-size: 33px; line-height: 33px; margin-left: 5px; margin-right: 0px" target="_blank"></a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12 column first last">
-                      <div class="SpacerBox Clear none space-30" style="width:100%; display:block">
-                        <i class="spaceri"></i>
-                      </div>
-                      <p>JM Auto Sports is the premier provider of automotive products and solutions in the greater tri-county area. We take pride in the quality of our inventory and the amazing people we work with. Feel free to drop us a question or say hi!</p>
-                      <div class="SpacerBox Clear none space-30" style="width:100%; display:block">
-                        <i class="spaceri"></i>
-                      </div>
-                      <p class="lead"></p>
-                      <div class="SubscribeBoxWrapper AlignCenter big"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-1 column"></div>
-                <div class="col-md-2 column captionPresent">
-                  <div class="columnCaption index2">
-                    <span>
-                      <span class="h3">SUPPORT </span>
-                    </span>
-                    <svg class="sceico-downsolo">
-                      <use href="{{asset 'icons.svg'}}#sceico-downsolo"></use>
-                    </svg>
-                  </div>
-                  <div class="columnCaptionContent index2">
-                    <ul>
-                      <li>
-                        <a href="https://jmautosports.com/contact">Help Center</a>
-                      </li>
-                      <li>
-                        <a href="https://jmautosports.com/secure/dashboard">My Account</a>
-                      </li>
-                      <li>
-                        <a href="https://jmautosports.com/secure/dashboard">Track Order</a>
-                      </li>
-                      <li>
-                        <a href="https://jmautosports.com/secure/OrderHistory">Order History</a>
-                      </li>
-                      <li>
-                        <a href="https://jmautosports.com/privacypolicy">Privacy Policy</a>
-                      </li>
-                      <li>
-                        <a href="https://jmautosports.com/returnpolicy">Return Policy</a>
-                      </li>
-                      <li>
-                        <a href="https://jmautosports.com/articles/simple-ways-to-return-items">How to Return an Item</a>
-                      </li>
-                      <li>
-                        <a href="https://jmautosports.com/articles/simple-way-to-cancel-ordered-items">How to Cancel an Order</a>
-                      </li>
-                      <li>
-                        <a href="https://jmautosports.com/terms">Terms of Use</a>
-                      </li>
-                      <li>
-                        <a href="https://jmautosports.com/faq">FAQ</a>
-                      </li>
-                      <li>
-                        <a href="https://jmautosports.com/contact">Contact Us</a>
-                      </li>
+<svg xmlns="http://www.w3.org/2000/svg">
+    <symbol x="0px" y="0px" viewBox="0 0 96.124 96.123" class="icon icon-facebook" id="icon-facebook">
+        <g><path d="M72.089,0.02L59.624,0C45.62,0,36.57,9.285,36.57,23.656v10.907H24.037c-1.083,0-1.96,0.878-1.96,1.961v15.803
+            c0,1.083,0.878,1.96,1.96,1.96h12.533v39.876c0,1.083,0.877,1.96,1.96,1.96h16.352c1.083,0,1.96-0.878,1.96-1.96V54.287h14.654
+            c1.083,0,1.96-0.877,1.96-1.96l0.006-15.803c0-0.52-0.207-1.018-0.574-1.386c-0.367-0.368-0.867-0.575-1.387-0.575H56.842v-9.246
+            c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+    </symbol>
+    <symbol x="0px" y="0px" viewBox="0 0 512 512" class="icon icon-twitter" id="icon-twitter">
+        <g><g><path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+            c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+            c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+            c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+            c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+            c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+            C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+            C480.224,136.96,497.728,118.496,512,97.248z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+    </symbol>
+    <symbol x="0px" y="0px" viewBox="0 0 96.828 96.827" class="icon icon-google" id="icon-google">
+        <g><g><path d="M62.617,0H39.525c-10.29,0-17.413,2.256-23.824,7.552c-5.042,4.35-8.051,10.672-8.051,16.912
+                c0,9.614,7.33,19.831,20.913,19.831c1.306,0,2.752-0.134,4.028-0.253l-0.188,0.457c-0.546,1.308-1.063,2.542-1.063,4.468
+                c0,3.75,1.809,6.063,3.558,8.298l0.22,0.283l-0.391,0.027c-5.609,0.384-16.049,1.1-23.675,5.787
+                c-9.007,5.355-9.707,13.145-9.707,15.404c0,8.988,8.376,18.06,27.09,18.06c21.76,0,33.146-12.005,33.146-23.863
+                c0.002-8.771-5.141-13.101-10.6-17.698l-4.605-3.582c-1.423-1.179-3.195-2.646-3.195-5.364c0-2.672,1.772-4.436,3.336-5.992
+                l0.163-0.165c4.973-3.917,10.609-8.358,10.609-17.964c0-9.658-6.035-14.649-8.937-17.048h7.663c0.094,0,0.188-0.026,0.266-0.077
+                l6.601-4.15c0.188-0.119,0.276-0.348,0.214-0.562C63.037,0.147,62.839,0,62.617,0z M34.614,91.535
+                c-13.264,0-22.176-6.195-22.176-15.416c0-6.021,3.645-10.396,10.824-12.997c5.749-1.935,13.17-2.031,13.244-2.031
+                c1.257,0,1.889,0,2.893,0.126c9.281,6.605,13.743,10.073,13.743,16.678C53.141,86.309,46.041,91.535,34.614,91.535z
+                 M34.489,40.756c-11.132,0-15.752-14.633-15.752-22.468c0-3.984,0.906-7.042,2.77-9.351c2.023-2.531,5.487-4.166,8.825-4.166
+                c10.221,0,15.873,13.738,15.873,23.233c0,1.498,0,6.055-3.148,9.22C40.94,39.337,37.497,40.756,34.489,40.756z"/>
+            <path d="M94.982,45.223H82.814V33.098c0-0.276-0.225-0.5-0.5-0.5H77.08c-0.276,0-0.5,0.224-0.5,0.5v12.125H64.473
+                c-0.276,0-0.5,0.224-0.5,0.5v5.304c0,0.275,0.224,0.5,0.5,0.5H76.58V63.73c0,0.275,0.224,0.5,0.5,0.5h5.234
+                c0.275,0,0.5-0.225,0.5-0.5V51.525h12.168c0.276,0,0.5-0.223,0.5-0.5v-5.302C95.482,45.446,95.259,45.223,94.982,45.223z"/>
+        </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+    </symbol>
+    <symbol x="0px" y="0px" viewBox="0 0 510 510" class="icon icon-instagram" id="icon-instagram">
+        <g><g id="post-instagram">
+            <path d="M459,0H51C22.95,0,0,22.95,0,51v408c0,28.05,22.95,51,51,51h408c28.05,0,51-22.95,51-51V51C510,22.95,487.05,0,459,0z
+                 M255,153c56.1,0,102,45.9,102,102c0,56.1-45.9,102-102,102c-56.1,0-102-45.9-102-102C153,198.9,198.9,153,255,153z M63.75,459
+                C56.1,459,51,453.9,51,446.25V229.5h53.55C102,237.15,102,247.35,102,255c0,84.15,68.85,153,153,153c84.15,0,153-68.85,153-153
+                c0-7.65,0-17.85-2.55-25.5H459v216.75c0,7.65-5.1,12.75-12.75,12.75H63.75z M459,114.75c0,7.65-5.1,12.75-12.75,12.75h-51
+                c-7.65,0-12.75-5.1-12.75-12.75v-51c0-7.65,5.1-12.75,12.75-12.75h51C453.9,51,459,56.1,459,63.75V114.75z"/>
+        </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+    </symbol>
+</svg>
+<footer class="site-footer halo_footer-default" data-section-type="footer">
+    <div class="halo_footer_top">
+        <div class="container">
+            <div class="footer-info footer-row-flex">
+                <div class="footer-col footer-col--small footer-col--mobile">
+                    <h5 class="footer-info-heading">Terms</h5>
+                    <ul class="footer-info-list" style="display: block;">
+                        <li class="footer-info-item">
+                            <a href="https://jmautosports.com/pages/about-us" aria-label="link"> About Us </a>
+                        </li>
+                        <li class="footer-info-item">
+                            <a href="https://jmautosports.com/policies/terms-of-service" aria-label="link"> Terms of Use </a>
+                        </li>
+                        <li class="footer-info-item">
+                            <a href="https://jmautosports.com/policies/privacy-policy" aria-label="link"> Privacy Policy </a>
+                        </li>
+                        <li class="footer-info-item">
+                            <a href="https://jmautosports.com/policies/refund-policy" aria-label="link"> Return Policy </a>
+                        </li>
                     </ul>
-                  </div>
                 </div>
-                <div class="col-md-2 column captionPresent">
-                  <div class="columnCaption index3">
-                    <span>
-                      <span class="h3">ABOUT </span>
-                    </span>
-                    <svg class="sceico-downsolo">
-                      <use href="https://jmautosports.com/scripts/svgIcons/icons.svg#sceico-downsolo"></use>
-                    </svg>
-                  </div>
-                  <div class="columnCaptionContent index3">
-                    <ul>
-                      <li>
-                        <a href="https://jmautosports.com/about">About Us</a>
-                      </li>
-                      <li>
-                        <a href="https://jmautosports.com/category">Product Categories</a>
-                      </li>
-                      <li>
-                        <a href="https://jmautosports.com/specials">Coupon Codes</a>
-                      </li>
-                      <li>
-                        <a href="https://jmautosports.com/product/gift-card">Gift Cards</a>
-                      </li>
-                      <li>
-                        <a href="https://jmautosports.com/articles">Guides &amp; Articles</a>
-                      </li>
-                      <li>
-                        <a href="https://jmautosports.com/buy/shop/discount">Popular Searches</a>
-                      </li>
-                      <li>
-                        <a href="https://jmautosports.com/sitemap">Sitemap</a>
-                      </li>
+                <div class="footer-col footer-col--small footer-col--mobile">
+                    <h5 class="footer-info-heading">Customer Service</h5>
+                    <ul class="footer-info-list" style="display: block;">
+                        <li class="footer-info-item">
+                            <a href="https://support.jmautosports.com/hc/en-us" aria-label="link" aria-describedby="a11y-external-message"> Help Center </a>
+                        </li>
+                        <li class="footer-info-item">
+                            <a href="https://jmautosports.com/pages/order-lookup" aria-label="link"> Order Lookup </a>
+                        </li>
+                        <li class="footer-info-item">
+                            <a href="https://jmautosports.com/pages/contact" aria-label="link"> Contact Us </a>
+                        </li>
+                        <li class="footer-info-item">
+                            <a href="https://jmautosports.com/apps/return_prime" aria-label="link"> Request Return </a>
+                        </li>
+                        <li class="footer-info-item">
+                            <a href="#" aria-label="link"> Guides &amp; Articles </a>
+                        </li>
                     </ul>
-                  </div>
                 </div>
-                <div class="col-md-2 column last captionPresent">
-                  <div class="columnCaption index4">
-                    <span>
-                      <span class="h3">CONTACTS </span>
-                    </span>
-                    <svg class="sceico-downsolo">
-                      <use href="https://jmautosports.com/scripts/svgIcons/icons.svg#sceico-downsolo"></use>
-                    </svg>
-                  </div>
-                  <div class="columnCaptionContent index4">
-                    <p>JM AUTO SPORTS <br>1633 Sycamore Ave, <br>Bohemia, NY 11716 </p>
-                    <p>
-                      <strong>Toll Free:</strong> (855) 99-TURBO
-                    </p>
-                    <p>
-                      <strong>Email:</strong>
-                      <a href="mailto:info@jmautoracing.com">info@jmautoracing.com</a>
-                    </p>
-                  </div>
+                <div class="footer-col footer-col--small footer-col--mobile">
+                    <h5 class="footer-info-heading">Shop</h5>
+                    <ul class="footer-info-list" style="display: block;">
+                        <li class="footer-info-item">
+                            <a href="https://jmautosports.com/pages/brands" aria-label="link"> Brands </a>
+                        </li>
+                        <li class="footer-info-item">
+                            <a href="https://jmautosports.com/collections/exhaust" aria-label="link"> Exhaust </a>
+                        </li>
+                        <li class="footer-info-item">
+                            <a href="https://jmautosports.com/collections/air-intakes" aria-label="link"> Air Intakes </a>
+                        </li>
+                        <li class="footer-info-item">
+                            <a href="https://jmautosports.com/collections/suspension" aria-label="link"> Suspension </a>
+                        </li>
+                        <li class="footer-info-item">
+                            <a href="https://jmautosports.com/collections/exterior-styling" aria-label="link"> Exterior Styling </a>
+                        </li>
+                        <li class="footer-info-item">
+                            <a href="https://jmautosports.com/collections/engine" aria-label="link"> Engine </a>
+                        </li>
+                        <li class="footer-info-item">
+                            <a href="https://jmautosports.com/collections/forced-induction" aria-label="link"> Forced Induction </a>
+                        </li>
+                        <li class="footer-info-item">
+                            <a href="https://jmautosports.com/collections/interior" aria-label="link"> Interior </a>
+                        </li>
+                    </ul>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="footerMasterHTMLBefore"></div>
-        <div class="footer" style="border-width:0px;width:100%;border-collapse:collapse;">
-          <div class="FooterTable" style="background-color:White;border-width:0px;width:100%;border-collapse:collapse;">
-            <div class="footerbg" align="left">
-              <div class="tblFooter" style="border-width:0px;width:100%;border-collapse:collapse;margin-top: 28px">
-                <div class="footertxt" align="center">
-                  <div class="container">
-                    <div class="row">
-                      <div class="footerLinkWrap">
-                        <ul class="footerLinkWithCategory but1">
-                          <li class="footerCategoryWrap  wrap1">
-                            <span class="footerCategory">CUSTOMER SERVICE</span>
-                            <span class="footerLinkLI">
-                              <a class="footerLinkNew" href="https://www.jmautosports.com/about">About Us</a>
-                            </span>
-                            <span class="footerLinkLI">
-                              <a class="footerLinkNew" href="https://www.jmautosports.com/contact">Contact Us</a>
-                            </span>
-                            <span class="footerLinkLI">
-                              <a class="footerLinkNew" href="https://www.jmautosports.com/faq">FAQ</a>
-                            </span>
-                          </li>
-                          <li class="footerCategoryWrap  wrap2">
-                            <span class="footerCategory">HELP</span>
-                            <span class="footerLinkLI">
-                              <a class="footerLinkNew" href="https://www.jmautosports.com/faq">FAQ</a>
-                            </span>
-                            <span class="footerLinkLI">
-                              <a class="footerLinkNew" href="https://www.jmautosports.com/privacypolicy">Privacy Policy</a>
-                            </span>
-                            <span class="footerLinkLI">
-                              <a class="footerLinkNew" href="https://jmautosports.com/returnpolicy">Return Policy</a>
-                            </span>
-                            <span class="footerLinkLI">
-                              <a class="footerLinkNew" href="https://www.jmautosports.com/terms">Terms of Use</a>
-                            </span>
-                          </li>
-                          <li class="footerCategoryWrap  wrap3">
-                            <span class="footerCategory">EXTRAS</span>
-                            <span class="footerLinkLI">
-                              <a class="footerLinkNew" href="https://www.jmautosports.com/links">Partner Links</a>
-                            </span>
-                            <span class="footerLinkLI">
-                              <a class="footerLinkNew" href="https://www.jmautosports.com/category">Product Categories</a>
-                            </span>
-                          </li>
-                          <li class="footerCategoryWrap  wrap4">
-                            <span class="footerCategory" style="display: none;"></span>
-                            <span class="footerHTMLContent">
-                              <div class="AuthorizeNetSeal">
-                                <script type="text/javascript" language="javascript">
-                                  var ANS_customer_id = "4f2995f9-60db-443c-9d78-87763ad72d84";
-                                </script>
-                                <script type="text/javascript" language="javascript" src="//verify.authorize.net/anetseal/seal.js"></script>
-                                <a href="http://www.authorize.net/" id="AuthorizeNetText" target="_blank">Credit Card Processing</a>
-                              </div>
-                            </span>
-                          </li>
-                        </ul>
-                        <div class="footerSeparator"></div>
-                        <ul class="footerLinkWithCategory">
-                          <li class="footerCategoryWrap last wrap6 wrap1">
-                            <span class="footerCategory" style="display: none;"></span>
-                            <span class="footerHTMLContent">
-                              <span class="copy-text">&copy; 2024 JM Auto Racing. All Rights Reserved</span>
-                              <span class="copy-imgt">
-                                <img src="https://jmautosports.com/portals/3533/theme8/f-paypal.png" <="" span="">
-                              </span>
-                            </span>
-                          </li>
-                        </ul>
-                      </div>
+                <div class="footer-col footer-col--small footer-col--mobile">
+                    <h5 class="footer-info-heading">Contacts</h5>
+                    <ul class="footer-info-list" style="display: block;">
+                        <li class="footer-info-item">
+                            <a href="https://jmautosports.com/pages/contact" aria-label="link"> JM AUTO SPORTS 1633 Sycamore Ave, Bohemia, NY 11716 </a>
+                        </li>
+                        <li class="footer-info-item">
+                            <a href="tel:85599TURBO" aria-label="link" aria-describedby="a11y-external-message"> Toll Free: (855) 99-TURBO </a>
+                        </li>
+                        <li class="footer-info-item">
+                            <a href="mailto:info@jmautoracing.com" aria-label="link" aria-describedby="a11y-external-message"> Email: info@jmautoracing.com </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <div class="social_list mb-4">
+                        <div class="social-icons">
+                            <a class="social-icon facebook" href="https://facebook.com/shopify" title="Facebook" target="_blank" aria-label="link" aria-describedby="a11y-new-window-external-message" rel="noopener">
+                                <svg class="icon">
+                                    <use xlink:href="#icon-facebook"></use>
+                                </svg>
+                            </a>
+                            <a class="social-icon twitter" href="https://twitter.com/shopify" title="Twitter" target="_blank" aria-label="link" aria-describedby="a11y-new-window-external-message" rel="noopener">
+                                <svg class="icon">
+                                    <use xlink:href="#icon-twitter"></use>
+                                </svg>
+                            </a>
+                            <a class="social-icon instagram" href="http://instagram.com/shopify" title="Instagram" target="_blank" aria-label="link" aria-describedby="a11y-new-window-external-message" rel="noopener">
+                                <svg class="icon">
+                                    <use xlink:href="#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
-                  </div>
+                    <div class="geotrust_ssl--image slick-initialized slick-slider" data-slick="{
+                                        &quot;rows&quot;: 0,
+                                        &quot;arrows&quot;: true,
+                                        &quot;dots&quot;: false,
+                                        &quot;autoplay&quot;: true,
+                                        &quot;infinite&quot;: true,
+                                        &quot;slidesToShow&quot;: 1,
+                                        &quot;slidesToScroll&quot;: 1,
+                                        &quot;adaptiveHeight&quot;: true,
+                                        &quot;prevArrow&quot;: &quot;
+											<div class='slick-prev slick-arrow'>
+												<svg class='icon'>
+													<use xlink:href='#icon-chevron-left' />
+												</svg>
+											</div>&quot;,
+                                        &quot;nextArrow&quot;: &quot;
+											<div class='slick-next slick-arrow'>
+												<svg class='icon'>
+													<use xlink:href='#icon-chevron-right' />
+												</svg>
+											</div>&quot;
+                                    }">
+                        <div class="slick-list draggable">
+                            <div class="slick-track" style="opacity: 1; width: 0px; transform: translate3d(0px, 0px, 0px);"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="footerIcons" style="padding-top: 15px; padding-bottom:15px; text-align:center;">
-                  <div class="pIcons traditional master">
-                    <img src="https://jmautosports.com/scripts/pgCSS/images/svgPayment/mastercard.svg" class="b-lazy b-loaded" alt="mastercard">
-                  </div>
-                  <div class="pIcons traditional visa">
-                    <img src="https://jmautosports.com/scripts/pgCSS/images/svgPayment/visa.svg" class="b-lazy b-loaded" alt="visa">
-                  </div>
-                  <div class="pIcons traditional amex">
-                    <img src="https://jmautosports.com/scripts/pgCSS/images/svgPayment/amex.svg" class="b-lazy b-loaded" alt="american express">
-                  </div>
-                  <div class="pIcons traditional discover">
-                    <img src="https://jmautosports.com/scripts/pgCSS/images/svgPayment/discover.svg" class="b-lazy b-loaded" alt="discover">
-                  </div>
-                  <div class="pIcons traditional paypal">
-                    <img src="https://jmautosports.com/scripts/pgCSS/images/svgPayment/paypal.svg" class="b-lazy b-loaded" alt="paypal">
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-        <div class="footerMasterHTMLBefore"></div>
-      </div>
-      <script>
-        var serverObjectsFooter;
-
-        function aspObjectsFooter() {
-          this.qo = "";
-          return this;
-        }
-        serverObjectsFooter = aspObjectsFooter();
-      </script>
     </div>
-  </div>
+    <div class="halo_footer_bottom layout-1">
+        <div class="container">
+            <div class="item">
+                <div class="footer-copyright">
+                    <small class="copyright-content"> &copy; 2024 JM Auto Racing. All Rights Reserved </small>
+                </div>
+                <div class="footer-copyright">
+                    <small class="copyright-content"></small>
+                </div>
+            </div>
+            <div class="item">
+                <ul class="payment-methods"></ul>
+            </div>
+        </div>
+    </div>
 </footer>

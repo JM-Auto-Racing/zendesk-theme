@@ -259,3 +259,52 @@ $header-height: 71px;
 #zd-modal-container ~ .skip-navigation {
   display: none;
 }
+
+.header-middle .item .icon-tabler {
+  fill: none;
+  margin-right: 0.25rem;
+}
+
+.header-middle .item a:hover {
+  color: inherit !important;
+}
+
+.StoreName {
+  position: absolute;
+  left: 0;
+  top: 14px;
+  z-index: 1;
+  text-align: center;
+  width: 100%
+}
+
+.StoreName a {
+  display: table;
+  width: auto;
+  max-width: 45%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 17px;
+  color: black;
+  font-weight: 700;
+  line-height: 19px;
+  text-decoration: none !important
+}
+
+.StoreName a:active {
+  color: black
+}
+
+.StoreName img {
+  max-height: 30px;
+  position: relative;
+  margin-top: -5px
+}
+
+.StoreName h1.logoText {
+  font-size: 15px;
+  line-height: 15px;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0
+}
